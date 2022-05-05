@@ -1,0 +1,22 @@
+cabal-version:      2.4
+name:               dbus-example
+version:            0.1.0.0
+description:        
+author:             Jesse Holzman
+maintainer:         jesseholzman96@gmail.com
+
+executable dbus-exporter
+    hs-source-dirs:   exporter
+    main-is:          Main.hs
+    default-language: Haskell2010
+    build-depends:
+        , base ^>=4.14.3.0
+        , dbus
+
+executable dbus-caller
+    hs-source-dirs:   caller
+    main-is:          Main.hs
+    default-language: Haskell2010
+    build-depends:
+        , base ^>=4.14.3.0
+        , dbus
