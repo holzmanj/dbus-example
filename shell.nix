@@ -3,5 +3,6 @@ pkgs.mkShell {
   buildInputs = [
     (import ./default.nix { inherit pkgs; })
     pkgs.cabal-install
+    pkgs.zlib
   ];
 }
